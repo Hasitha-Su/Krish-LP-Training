@@ -1,3 +1,3 @@
 # Krish-LP-Training
 
-This repo contains answers for excerises given by Krish
+This repo contains answers for exercises given by Krish
