@@ -3,11 +3,11 @@ public class Application {
 	public static void main(String[] args) {
 
 		// telescoping constructor : 1st approach
-		Salarytelescoping1 salarytelescoping1 = new Salarytelescoping1("EMP-TC-1");
+		SalaryTelescoping1 salarytelescoping1 = new SalaryTelescoping1("EMP-TC-1");
 		System.out.println(salarytelescoping1);
 
 		// telescoping constructor : 2nd approach
-		Salarytelescoping2 salarytelescoping2 = new Salarytelescoping2("EMP-TC-2");
+		SalaryTelescoping2 salarytelescoping2 = new SalaryTelescoping2("EMP-TC-2");
 		System.out.println(salarytelescoping2);
 
 		// with builder pattern
