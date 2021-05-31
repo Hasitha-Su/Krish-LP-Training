@@ -1,3 +1,7 @@
 
-const checkAnagram = require("./task-1-Anagram/checkAnagram");
+const task1 = require("./checkAnagram");
 
+word01 = "silent"
+word02 = "listen"
+
+task1.checkAnagram(word01, word02)
