@@ -1,0 +1,37 @@
+<div class="container">
+    <div class="row">
+         <!--spacing-->
+        <div class="col-md-3"></div>
+        <!--form div-->
+        <div class="col-md-6">
+            <form>
+                <div class="form-row">
+                    <!--first name-->
+                    <div class="form-group col-md-6">
+                        <label>Pet Name</label>
+                        <input type="text" name="petname" [(ngModel)]="petObj.name" value="{{petObj.name}}"  class="form-control">
+                    </div>
+                    <!--last name-->
+                    <div class="form-group col-md-6">
+                        <label>Pet Breed</label>
+                        <input type="text" name="breed" [(ngModel)]="petObj.breed" class="form-control">
+                    </div>
+                </div>
+                <!--Email-->
+                <div class="form-group">
+                    <label for="inputAddress">Pet Color</label>
+                    <input type="text" name="color" [(ngModel)]="petObj.color"  class="form-control">
+                </div>
+                <!--designation-->
+                <div class="form-group">
+                    <label for="inputAddress2">Pet's Estimate Value</label>
+                    <input type="text" name="estimateVal" [(ngModel)]="petObj.estimateVal"   class="form-control">
+                </div>
+                <!--submit-->
+                <button type="submit" (click)="updatePet()" class="btn btn-primary">Update</button>
+            </form>
+        </div>
+        <!--spacing-->
+        <div class="col-md-3"></div>
+    </div>
+</div>

@@ -1,0 +1,38 @@
+<div class="card">
+    <div class="card-header">
+        <p>{{title}}</p>
+    </div>
+    <div class="card-body">
+        <div class="table-responsive">
+            <table class="table" *ngIf='ownersList.length'>
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <!-- <th>Gender</th> -->
+                        <th>Email Address</th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let owner of ownersList">
+                        <td>{{owner.id}}</td>
+                        <td>{{owner.first_name}}</td>
+                        <td>{{owner.last_name}}</td>
+                        <!-- <td></td> -->
+                        <td>{{owner.email}}</td>
+                        <td>{{owner.designation}}</td>
+                        <td>
+                            <button type="button" class="btn btn-warning" [routerLink]="['owners/edit', owner.id]" (click)="editOwner(owner.id)">Edit</button>
+                        </td>
+                        <td>
+                            <button type="button" class="btn btn-danger" (click)="deleteOwner(owner.id)">Delete</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

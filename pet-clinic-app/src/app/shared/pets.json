@@ -1,0 +1,29 @@
+[
+    {
+        "img":"https://upload.wikimedia.org/wikipedia/commons/1/15/White_Persian_Cat.jpg",
+        "name": "Tom",
+        "breed": "Persian",
+        "color": "Pearl White",
+        "age": "2",
+        "estimateVal":800,
+        "progress":3
+    },
+    {
+        "img":"https://upload.wikimedia.org/wikipedia/commons/1/15/White_Persian_Cat.jpg",
+        "name": "Tom",
+        "breed": "Persian",
+        "color": "Pearl White",
+        "age": "2",
+        "estimateVal":700,
+        "progress":56
+    },
+    {
+        "img":"https://upload.wikimedia.org/wikipedia/commons/1/15/White_Persian_Cat.jpg",
+        "name": "Tom",
+        "breed": "Persian",
+        "color": "Pearl White",
+        "age": "2",
+        "estimateVal":1000,
+        "progress":78
+    }
+]

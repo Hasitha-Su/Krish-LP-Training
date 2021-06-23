@@ -1,0 +1,42 @@
+<div class="container">
+    <div class="row">
+        <!--spacing-->
+        <div class="col-md-3"></div>
+        <!--form div-->
+        <div class="col-md-6">
+            <form>
+                <p>Owner id #{{ownerObj.id}}</p>
+                <div class="form-row">
+                    <!--first name-->
+                    <div class="form-group col-md-6">
+                        <label>First Name</label>
+                        <input type="text" value="{{ownerObj.first_name}}" [(ngModel)]="ownerObj.first_name"
+                            name="first_name" class="form-control">
+                    </div>
+                    <!--last name-->
+                    <div class="form-group col-md-6">
+                        <label>Last Name</label>
+                        <input type="text" value="{{ownerObj.last_name}}" [(ngModel)]="ownerObj.last_name"
+                            name="last_name" class="form-control">
+                    </div>
+                </div>
+                <!--Email-->
+                <div class="form-group">
+                    <label for="inputAddress">Email Address</label>
+                    <input type="email" value="{{ownerObj.email}}" [(ngModel)]="ownerObj.email" name="email"
+                        class="form-control">
+                </div>
+                <!--designation-->
+                <div class="form-group">
+                    <label for="inputAddress2">Designation</label>
+                    <input type="text" value="{{ownerObj.designation}}" [(ngModel)]="ownerObj.designation"
+                        name="designation" class="form-control">
+                </div>
+                <!--submit-->
+                <button type="submit" (click)="updateOwner()" class="btn btn-primary">Update</button>
+            </form>
+        </div>
+        <!--spacing-->
+        <div class="col-md-3"></div>
+    </div>
+</div>

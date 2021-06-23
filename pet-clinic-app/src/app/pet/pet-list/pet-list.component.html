@@ -1,0 +1,39 @@
+<div class="card">
+    <div class="card-header">
+        <!-- <p>{{title}}</p> -->
+    </div>
+    <div class="card-body">
+        <div class="table-responsive">
+            <table class="table" *ngIf='petsList.length'>
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Pet's Name</th>
+                        <th>Pet's Breed</th>
+                        <th>Pet's Color</th>
+                        <th>Pet's Age</th>
+                        <th>Estimated Value</th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let pet of petsList">
+                        <td>{{pet.id}}</td>
+                        <td>{{pet.name}}</td>
+                        <td>{{pet.breed}}</td>
+                        <td>{{pet.color}}</td>
+                        <td>{{pet.age}}</td>
+                        <td>{{pet.estimateVal}}</td>
+                        <td>
+                            <button type="button" class="btn btn-warning" (click)="editPet(pet.id)">Edit</button>
+                        </td>
+                        <td>
+                            <button type="button" class="btn btn-danger" (click)="deletePet(pet.id)">Delete</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

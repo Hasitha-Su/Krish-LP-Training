@@ -1,0 +1,42 @@
+[
+    {
+        "id": 1,
+        "first_name": "Whitney",
+        "last_name": "Keirl",
+        "email": "wkeirl0@taobao.com",
+        "gender": "Agender",
+        "email_address": "wkeirl0@uiuc.edu"
+    },
+    {
+        "id": 2,
+        "first_name": "Lucita",
+        "last_name": "Leghorn",
+        "email": "lleghorn1@lulu.com",
+        "gender": "Bigender",
+        "email_address": "lleghorn1@ucla.edu"
+    },
+    {
+        "id": 3,
+        "first_name": "Beilul",
+        "last_name": "Doohey",
+        "email": "bdoohey2@ibm.com",
+        "gender": "Bigender",
+        "email_address": "bdoohey2@furl.net"
+    },
+    {
+        "id": 4,
+        "first_name": "Javier",
+        "last_name": "Birth",
+        "email": "jbirth3@w3.org",
+        "gender": "Genderqueer",
+        "email_address": "jbirth3@mail.ru"
+    },
+    {
+        "id": 5,
+        "first_name": "Nataline",
+        "last_name": "Fransson",
+        "email": "nfransson4@ox.ac.uk",
+        "gender": "Polygender",
+        "email_address": "nfransson4@ed.gov"
+    }
+]
