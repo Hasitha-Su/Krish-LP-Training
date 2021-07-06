@@ -18,6 +18,7 @@ import { PetListComponent } from './pet/pet-list/pet-list.component'
 import { PetService } from './pet/pet.service';
 import { ActionsComponent } from './actions/actions.component';
 import { OwnerService } from './owner/owner.service';
+import { LkrFormatterPipe } from './shared/lkr-formatter.pipe';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { OwnerService } from './owner/owner.service';
     PetAddComponent,
     PetEditComponent,
     PetListComponent,
-    ActionsComponent
+    ActionsComponent,
+    LkrFormatterPipe
 
   ],
   imports: [
