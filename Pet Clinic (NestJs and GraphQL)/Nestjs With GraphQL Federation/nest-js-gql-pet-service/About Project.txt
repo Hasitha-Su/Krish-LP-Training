@@ -1,0 +1,38 @@
+Best way to create GraphQL API ?? | NestJS GraphQL Tutorial by Marius Espejo
+https://www.youtube.com/watch?v=geYvdbpo3cA
+
+https://nestjs.com/
+https://typeorm.io/#/
+https://graphql.org/
+
+
+Graphql
+
+Typeorm
+
+Resolver
+
+Entity
+
+Mutation
+
+Query
+
+code first vs schema first
+
+
+GraphQL is a query language for APIs and a runtime for fulfilling those queries with your existing data
+
+TypeORM is an Object Relational Mapper library running in node. js and written in TypeScript. ... js).
+TypeORM supports multiple databases like MySQL, PostgreSQL, MariaDB, SQLite, MS SQL Server, Oracle, SAP Hana and WebSQL.
+TypeORM is an easy-to-use ORM to scaffold new apps that connect to databases.
+
+A resolver is a function that resolves a value for a type or field in a schema.
+
+Entity is a class that maps to a database table (or collection when using MongoDB).
+
+
+
+
+
+install dependancies

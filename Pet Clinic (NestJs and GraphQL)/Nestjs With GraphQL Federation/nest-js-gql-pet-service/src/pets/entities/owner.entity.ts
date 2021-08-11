@@ -1,0 +1,16 @@
+import { Directive, ObjectType, Field, ID } from '@nestjs/graphql';
+import { Pet } from './pet.entity';
+
+@ObjectType()
+@Directive('@extends')
+@Directive('@key(fields: "id")')
+export class Owner{
+
+    @Field((type) => ID)
+    @Directive('@external')
+    id: string
+
+    @Field((type)=> [Pet])
+    pets: Pet[]
+
+}

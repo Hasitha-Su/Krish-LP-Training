@@ -1,0 +1,35 @@
+import { Resolver, Query, Mutation, Args, Int } from '@nestjs/graphql';
+import { PetService } from './pet.service';
+import { Pet } from './entities/pet.entity';
+import { CreatePetInput } from './dto/create-pet.input';
+import { UpdatePetInput } from './dto/update-pet.input';
+
+@Resolver(() => Pet)
+export class PetResolver {
+  constructor(private readonly petService: PetService) {}
+
+  @Mutation(() => Pet)
+  createPet(@Args('pet') pet: CreatePetInput) {
+    return this.petService.create(pet);
+  }
+
+  @Query(() => [Pet], { name: 'getAllPets' })
+  findAll() {
+    return this.petService.findAll();
+  }
+
+  @Query(() => Pet, { name: 'pet' })
+  findOne(@Args('id') id: string) {
+    return this.petService.findOne(id);
+  }
+
+  @Mutation(() => Pet)
+  updatePet(@Args('pet') pet: UpdatePetInput) {
+    return this.petService.update(pet.id, pet);
+  }
+
+  @Mutation(() => Pet)
+  removePet(@Args('id', { type: () => Int }) id: number) {
+    return this.petService.remove(id);
+  }
+}

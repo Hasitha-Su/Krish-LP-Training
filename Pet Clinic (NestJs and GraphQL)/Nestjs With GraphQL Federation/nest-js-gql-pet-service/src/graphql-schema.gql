@@ -1,0 +1,57 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+directive @key(fields: String!) on OBJECT | INTERFACE
+
+directive @extends on OBJECT | INTERFACE
+
+directive @external on OBJECT | FIELD_DEFINITION
+
+directive @requires(fields: String!) on FIELD_DEFINITION
+
+directive @provides(fields: String!) on FIELD_DEFINITION
+
+type Location {
+  id: ID!
+  pets: [Pet!]!
+}
+
+type Owner {
+  id: ID!
+  pets: [Pet!]!
+}
+
+type Pet {
+  id: ID!
+  name: String!
+  breed: String!
+  ownerId: String!
+  owner: Owner!
+  locationId: String!
+  location: Location!
+}
+
+type Query {
+  petsFindAll: [Pet!]!
+  petFindById(id: String!): Pet!
+}
+
+type Mutation {
+  createPet(createPetInput: CreatePetInput!): Pet!
+  updatePet(updatePetInput: UpdatePetInput!): Pet!
+  removePet(id: String!): Pet!
+}
+
+input CreatePetInput {
+  name: String!
+  breed: String!
+  ownerId: String
+  locationId: String!
+}
+
+input UpdatePetInput {
+  id: String!
+  name: String!
+  breed: String!
+}
